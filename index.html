@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Flatfile Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <input type="button" id="launch" value="Import users" class="disabled" disabled/>
+      <p id="no-license">Put a license key on line 4 of index.js to continue. <br /> If you don't have a license key, sign up or log in at <a href=https://app.flatfile.io/signup">app.flatfile.io/signup</a>.</p>
+      <div class="download">
+        <a href="users.csv" target="_blank" rel="noopener noreferrer">
+          Download a sample csv file here
+        </a>
+      </div>
+      <textarea id="raw_output">Your raw output will appear here.</textarea>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flatfile-csv-importer/build/dist/index.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
